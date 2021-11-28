@@ -1,0 +1,17 @@
+{{#each blogs as |blog| }}
+<div class="card">
+    <header class="card-header">
+    <p class="card-header-title column is-one-fifth">
+        {{blog.title}}
+    </p>
+    <p class="column is-one-fifth">
+      submitted by {{user.username}} on {{format_date blog.date_created}}
+    </p>
+  <div class="card-content">
+    <div class="content">
+        {{blog.content}}
+    </div>
+        <p><a href="/blog-post-info/{{blog.id}}">See More</a></p>
+  </div>
+</div>
+{{/each}}

@@ -1,0 +1,23 @@
+<h1>Update Post</h1>
+
+<form id="updatePost">
+    <div class="field">
+    <label class="label">Title</label>
+    <div class="control">
+        <input class="input" id="titleInput" type="text" value="{{title}}">
+    </div>
+    <label class="label">Content</label>
+    <div class="control">
+        <textarea class="textarea" id="contentInput" placeholder="Textarea" value="{{content}}"></textarea>
+    </div>
+
+    <button class="button is-primary" type="submit" id="updateBlogBtn">Update Post</button>
+
+    </div>
+</form>
+<br>
+
+    <button class="button is-danger" type="button" id="deleteBlogBtn">Delete Post</button>
+    <button class="button is-warning" id="returnBtn"><a href='/dashboard'>Return to Dashboard</a></button>
+
+<script src="/js/updatePost.js"></script>

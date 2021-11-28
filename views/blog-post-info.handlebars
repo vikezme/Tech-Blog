@@ -1,0 +1,33 @@
+<div class="card">
+    <header class="card-header">
+    <p class="card-header-title column is-one-fifth">
+        {{title}}
+    </p>
+    <p class="column is-one-fifth">
+      {{user.username}} on {{format_date date_created}}
+    </p>
+  <div class="card-content">
+    <div class="content">
+        {{content}}
+    </div>
+  </div>
+</div>
+
+<br>
+
+<form id="newComment">
+    <div class="field">
+    <label class="label">Add Comment</label>
+    <div class="control">
+        <textarea class="textarea" id="commentInput" placeholder="Textarea"></textarea>
+    </div>
+    <br>
+    <button class="button is-primary" id="newBlogBtn">Submit</button>
+    </div>
+</form>
+
+{{#each comments as |comment|}}
+{{>show-comments}}
+{{/each}}
+
+<script src="/js/addComment.js"></script>

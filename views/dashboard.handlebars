@@ -1,0 +1,19 @@
+<h1>Your Dashboard</h1>
+
+<!---Add User's content here-->
+{{#each blogs as |blog| }}
+<div class="card">
+    <header class="card-header">
+    <p class="card-header-title column is-one-fifth">
+        {{blog.title}}
+    </p>
+  <div class="card-content">
+    <div class="content">
+        {{blog.content}}
+    </div>
+    <p><a href="/dashboard/blog-update/{{blog.id}}">Update/Delete Post</a></p>
+  </div>
+</div>
+{{/each}}
+<br>
+<button class="button is-text" id="createBlog"><a href="/dashboard/create-blog">Add new Post</a></button>
