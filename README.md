@@ -28,6 +28,8 @@ https://github.com/vikezme/Tech-Blog.git
 
 https://vikezme.github.io/Tech-Blog/
 
+https://git.heroku.com/tech-blog77.git
+
 
 CONTACT:-
 
